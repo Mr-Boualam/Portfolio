@@ -1,0 +1,555 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root{
+  --first-bac-color: #111;
+  --second-bac-color: #222;
+  --first-tex-color: #29d9d5;
+  --second-tex-color: #fff;
+}
+.dark-theme{
+  --first-bac-color: hsl(186, 56%, 96%);
+  --second-bac-color: hsl(195, 62%, 94%);;
+  --second-tex-color: #111;
+}
+body{
+  background: var(--first-bac-color);
+  color: var(--second-tex-color);
+  transition: background 0.8s;
+}
+
+/* =============== MEME =================== */
+
+.max-width{
+  max-width: 1350px;
+  padding: 0 8%;
+  margin: auto;
+}
+.button{
+  background: none;
+  color: var(--first-tex-color);
+
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: 2px solid var(--first-tex-color);
+  transition: all 0.3s ease;  
+  cursor: pointer;
+}
+.button:hover{
+  background: var(--first-tex-color);
+  color: #fff;
+}
+.titre{
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--first-tex-color);
+  margin-bottom: 40px;
+}
+
+/* =============== NAVBAR =================== */
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  background: var(--second-bac-color);
+  box-shadow: 0 0 5px rgba(41, 217, 213, 0.5);
+}
+.navbar .max-width{
+  display: flex;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .nav-links li a{
+  color: var(--second-tex-color);
+  font-family: 'Ubuntu',sans-serif;
+  transition: color 0.3s ease;
+}
+.navbar .nav-links li a:hover{
+  color: var(--first-tex-color);
+}
+.navbar .logo img{
+  width: 120px;
+}
+.navbar ul li{
+  display: inline-block;
+  margin: 5px 15px;
+}
+.toggl-btn {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+/* ------------ button dark -------------- */
+
+.toggole-btn {
+  position: fixed;
+  top: 80px;
+  right: 30px;
+  background-color: #29d9d5;
+  color: #fff;
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+}
+.mode img{
+  height: 20px;
+  width: 20px;
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+/* =============== HOME =================== */
+
+#home{
+  padding-top: 150px;
+}
+.deux-cols{
+  grid-template-columns: 7fr 5fr;
+  align-items: center;
+  display: grid;
+  gap: 1.7rem;
+}
+.col1 p{
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 40px;
+  
+}
+.school{
+  width: 25px;
+  margin-left: 5px;
+}
+.col1 h1{
+  font-size: 50px;
+  font-family: serif;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.col1 h1 span{
+  color: var(--first-tex-color);
+  font-style: italic;
+}
+.col1 a{
+  margin-left: 100px;
+}
+.me{
+  width: 350px;
+  height: 390px;
+  border-radius: 45%;
+  z-index: -3;
+  border: 0.28rem solid var(--first-tex-color);
+  box-shadow: 0 0 50px rgba(41, 217, 213, 0.5);
+}
+.col1 i{
+  color: #29d9d5;
+}
+
+/* =============== ABOUT =================== */
+
+#about{
+  padding-top: 150px;
+  font-family: serif;
+}
+.deux-about{
+  display: flex;  
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-1{
+  flex-basis: 35%;
+}
+.about-2{
+  flex-basis: 40%;
+  margin-right: 10%;
+}
+.about-1 img{
+  box-shadow: 0 0 20px rgba(41, 217, 213, 0.5);
+  width: 100%;
+  border-radius: 15px; 
+}
+.paragraphe{
+  margin-bottom: 40px;
+}
+
+/* =============== PROJETS =================== */
+
+#services{
+  padding-top: 70px;
+}
+.services-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(250px , 1fr)); /*hade foction kadirlina a3mida */
+  grid-gap: 40px; /*dake tsime lidartlina kadire espace binathom be px */ 
+  margin-top: 50px;
+}
+.services-list div{
+  background: var(--second-bac-color);
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(41, 217, 213, 0.5);
+  border: 2px dotted var(--first-bac-color);
+  transition: transform 0.5s ;
+}
+.services-list div i{
+  font-size: 30px;
+  margin-bottom: 30px;
+} 
+.sub-titre{
+  color: var(--first-tex-color);
+}
+.services-list div h1{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  width: 250px;
+  margin: 0 auto;
+} 
+.C{
+  width: 30px;
+  margin-bottom: 30px;
+}
+.services-list div .a{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 12px;
+  margin: 20px;
+  margin-left: 40px;
+  display: inline-block;
+
+  background: none;
+  color: var(--first-tex-color);
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 8px;
+  border: 2px solid var(--first-tex-color);
+  transition: transform 0.3s ;  
+
+  cursor: pointer;
+}
+.services-list div .a:hover{
+  transform: translateX(10px);
+  color: var(--second-tex-color);
+}
+.services-list div:hover{
+ background: var(--first-bac-color);
+ border-color: var(--first-tex-color);
+
+  transform: translateY(-10px);
+}
+.fa-html5{
+  color: #f35900;
+}
+.fa-css3-alt{
+  color: #0061f3;
+}
+.fa-js{
+  color: #f8ba0f;
+}
+
+/* =============== MODALE =================== */
+
+.overlay{
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: #ccc;
+  display: none;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff91; /* Fond semi-transparent pour l'effet d'ombrage */
+}
+
+/* Style pour afficher le contenu du modal au centre */
+.modal-contenu {
+  background-color: var(--first-bac-color);
+  padding: 20px;
+  width: 60%;
+  max-width: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-contenu h2{
+  color: var(--first-tex-color);
+}
+/* Style pour le bouton de fermeture du modal */
+.fermer1 {
+  color: #ff365e;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.fermer1:hover,
+.fermer1:focus {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fermer2 {
+  color: #ff365e;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.fermer2:hover,
+.fermer2:focus {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.fermer3 {
+  color: #ff365e;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.fermer3:hover,
+.fermer3:focus {
+  color: var(--text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-contenu h2{
+  margin-bottom: 20px;
+}
+.modal-contenu p{
+  margin-bottom: 10px;
+}
+.modal-contenu a{
+  padding-right: 10px;
+}
+
+/* =============== CONTACT =================== */
+
+#contact{
+  padding-top: 100px;
+}
+.deux-contact{
+  display: flex;  
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-left{
+  flex-basis: 35%;
+}
+.contact-right{
+  flex-basis: 60%;
+}
+.contact-left h1{
+  margin-bottom: 10%;
+}
+.contact-left p{
+  margin-top: 15px;
+}
+.contact-left p i{
+  margin-right: 30px;
+  color: var(--first-tex-color);
+  font-size: 25px;
+}
+.social-icons{
+  margin-top: 30px;
+}
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: var(--second-tex-color);
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover{
+  color: var(--first-tex-color);
+  transform: translateY(-5px);
+}
+.contact-right form{
+  width: 100%;
+}
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  box-shadow: 0 0 7px rgba(41, 217, 213, 0.5);
+  outline: none;
+  background: var(--second-bac-color);
+  padding: 15px;
+  margin: 15px 0;
+  color: var(--second-tex-color);
+  font-size: 18px;
+  border-radius: 6px;
+}
+form .btn2{
+  font-size: 18px;
+  padding: 14px;
+  margin-top: 20px;
+  cursor: pointer; 
+}
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background: var(--second-bac-color);
+  margin-top: 50px;
+  box-shadow: 0 0 5px rgba(41, 217, 213, 0.5);
+}
+.copyright span{
+  color: #29d9d5;
+}
+.hidden {
+  display: none;
+  margin-top: 1px;
+  text-align: center;
+  font-size: 18px;
+}
+/* =============== SCROLL UP  =================== */
+
+.scroll-up-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 40px;
+  background-color: var(--first-tex-color);
+  color: #fff;
+  font-size: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.scroll-up-btn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* =============== CSS FOR SMALL SCREEN  =================== */
+
+@media screen and (max-width: 768px) {
+  /* ------------- NAVBAR -------------- */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #444;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .toggl-btn {
+    display: block;
+  }
+
+/* ------------- HOME -------------- */
+
+.deux-cols {
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  text-align: center;
+}
+.col1 p {
+  margin-left: 0;
+}
+.col1 h1 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.col1 a {
+  margin-left: 0;
+  margin-top: 20px;
+}
+.me {
+  width: 250px;
+  height: 280px;
+}
+
+  /* ------------- HOME -------------- */
+
+  .deux-about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-1,
+  .about-2 {
+    flex-basis: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .about-2 {
+    margin-top: 30px;
+  }
+  .about-1 img {
+    max-width: 70%;
+  }
+
+  /* ------------- MODALE -------------- */
+
+  .modal-contenu {
+    width: 90%; /* Réduire la largeur du contenu du modal */
+    max-width: none; /* Annuler la limite de largeur maximale */
+    font-size: 14px; /* Ajuster la taille de police pour les écrans plus petits */
+    padding: 10px; /* Réduire l'espacement intérieur */
+  }
+  .fermer1,
+  .fermer2,
+  .fermer3 {
+    font-size: 22px; /* Ajuster la taille du bouton de fermeture */
+  }
+
+  /* ------------- CONTACT -------------- */
+
+  .deux-contact {
+    flex-direction: column; /* Réorganiser les éléments en colonne */
+  }
+  .contact-left, .contact-right {
+    flex-basis: 100%; /* Prendre toute la largeur de l'écran */
+  }
+  .contact-left h1 {
+    text-align: center; /* Centrer le texte */
+    margin-bottom: 20px; /* Augmenter la marge inférieure pour plus d'espace */
+  }
+  .contact-left p {
+    text-align: center; /* Centrer le texte */
+  }
+  .social-icons {
+    text-align: center; /* Centrer les icônes sociales */
+    margin-top: 20px; /* Réduire l'espace supérieur */
+  }
+  .contact-right form {
+    padding: 0 10px; /* Réduire l'espacement des côtés pour mieux s'adapter aux écrans plus petits */
+  }
+  form .btn2 {
+    margin-top: 15px; /* Réduire la marge supérieure du bouton "submit" */
+  }
+  .copyright {
+    font-size: 12px; /* Réduire la taille du texte du copyright */
+  }
+
+}

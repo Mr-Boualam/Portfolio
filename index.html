@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- =============== CSS =============== -->
+  <link rel="stylesheet" href="style.css">
+  <!-- =============== SCRIPT =============== --> 
+  <script src="https://kit.fontawesome.com/d4d2395186.js" crossorigin="anonymous"></script>
+  <title>Web Site</title>
+</head>
+<body>
+  <!-- =============== NAVBAR ================= -->
+
+  <section class="navbar" id="navbar">
+    <div class="max-width">
+      <a href="#" class="logo" ><img id="imglogo" src="img/logo1.png" alt="Logo"></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Projets</a></li>
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
+      <div class="toggl-btn" onclick="toggleNav()">&#9776;</div>
+    </div>
+  </section>
+
+  <section class="mode" id="mode">
+    <div class="toggole-btn" id="btn">
+      <!--<span id="btnText">Dark</span>-->
+      <img  src="img/sun.png" alt="toggole-btn" id="btnIcon">
+    </div>
+  </section>
+
+  <!-- =============== HOME ================= -->
+
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="deux-cols">
+        <div class="col1">
+          <p>Computer science student <i class="fa-solid fa-graduation-cap"></i></p>
+          <h1>Hi, I'm <span>Boualam</span><br>Abdellah From Morocco</h1>
+          <a class="button" href="#about">About Me</a>
+        </div>
+        <div class="col2">
+          <img src="img/me.jpg" class="me" >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== ABOUT ================= -->
+
+  <section class="about" id="about">
+    <div class="max-width">
+      <div class="deux-about">
+        <div class="about-1">
+          <img src="img/moi.JPG">         
+        </div>
+        <div class="about-2">
+          <h1 class="titre">About Me</h1>
+          <p class="paragraphe">
+            Je m'appelle Abdellah Boualam, j'ai 21 ans et je suis étudiant en troisième
+             année de licence en informatique. Passionné par l'informatique depuis mon enfance,
+              j'ai acquis des connaissances approfondies dans différents domaines de ce domaine 
+              en constante évolution. Je suis motivé, curieux et j'adore trouver des solutions 
+              innovantes aux problèmes. Mon objectif est de continuer à développer mes 
+              compétences et de contribuer à des projets passionnants dans le domaine de
+               l'informatique.
+          </p>
+          <a class="button" href="img/CV.pdf" download >Dowlond My CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== PROJETS ================= -->
+
+  
+
+  <div id="services">
+    <div class="max-width">
+      <h1 class="sub-titre">My projects</h1>
+      <div class="services-list">
+        <div>
+          <img class="C" src="img/c-.png">
+          <h1>Application de gestion de produits</h1>
+          <button class="a" id="ouvrirModal1">Learn more</button>
+        </div>
+        <div>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-js"></i>
+          <h1>Portfolio en ligne pour un développeur </h1>       
+          <button class="a" id="ouvrirModal2">Learn more</button>
+        </div>
+        <div>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-js"></i>
+          <i class="fa-brands fa-php"></i>
+          <h1>Site web dynamique sur JAPON</h1>   
+          <button class="a" id="ouvrirModal3">Learn more</button>       
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- =============== MODLE ================= -->
+
+  <!-- Le modal-1 -->
+  <div id="monModal1" class="overlay modal">
+    <div class="modal-contenu">
+      <!-- Contenu du modal -->
+      <span class="fermer1">&times;</span>
+      <h2>Application de gestion de produits</h2>
+      <p>Le projet présenté est un programme de gestion de produits et de stock
+      développé en C++ à l'aide de la bibliothèque SDL pour l'interface graphique. 
+      L'objectif de ce projet est de fournir aux utilisateurs une interface conviviale
+      pour effectuer différentes opérations liées aux produits, telles que l'ajout,
+      la recherche, la suppression et l'affichage des produits disponibles en stock.</p>
+      <p>L'application commence par initialiser la bibliothèque SDL et charge une
+      image d'arrière-plan pour créer un environnement visuel attrayant. Quatre 
+      boutons interactifs sont ensuite définis pour les différentes fonctionnalités
+      : "Ajouter", "Recherche", "Supprimer" et "Afficher". Chaque bouton est équipé
+      d'un effet audio qui se déclenche lorsque l'utilisateur survole le bouton avec 
+      la souris, améliorant ainsi l'expérience utilisateur.</p>
+      <p>Lorsque l'utilisateur clique sur le bouton "Ajouter", une nouvelle fenêtre
+      s'ouvre, permettant d'ajouter de nouveaux produits au stock. De même, les 
+      boutons "Recherche" et "Supprimer" ouvrent des cadres distincts pour rechercher
+      des produits spécifiques ou supprimer des produits existants respectivement.
+      Enfin, le bouton "Afficher" déclenche une fenêtre qui affiche tous les produits
+      disponibles dans le stock.</p>
+      <p>Le programme repose sur une classe de produit "Produit" et une classe de 
+      gestion de stock "Stock". Ces classes permettent d'ajouter, supprimer et
+      gérer les informations relatives aux produits dans le stock.</p>
+      <p>Dans l'ensemble, ce projet offre une base solide pour créer une application 
+      de gestion de stock conviviale, et avec des améliorations continues, il 
+      pourrait devenir un outil puissant pour suivre et gérer efficacement les 
+      produits dans un environnement commercial ou industriel.</p>
+      <a href="https://github.com/Mr-Boualam/App-gestion-stock/tree/main/SDL.moi">
+        <button class="button" >voir le code</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Le modal-2 -->
+  <div id="monModal2" class="overlay modal">
+    <div class="modal-contenu">
+      <!-- Contenu du modal -->
+      <span class="fermer2">&times;</span>
+      <h2>Application de gestion de produits</h2>
+      <p>Le projet présenté un site web personnel qui reflète
+      l'identité et les compétences d'Abdellah Boualam, un étudiant en informatique
+      passionné par la technologie et le développement. Ce site offre une présentation 
+      attrayante avec une navigation fluide grâce à une barre de navigation bien 
+      conçue. La section "Home" accueille les visiteurs avec une introduction 
+      conviviale et une image qui capture l'essence de sa personnalité. La section
+      "About Me" présente une description détaillée de ses compétences, de son parcours
+      académique et de son intérêt pour l'informatique. Il partage sa passion pour
+      la recherche de solutions innovantes aux problèmes et son désir de continuer 
+      à se développer professionnellement.</p>
+      <p>La section "My Projects" met en valeur ses réalisations en présentant trois 
+      projets uniques avec des descriptions claires et des icônes illustrant les 
+      technologies utilisées. Chaque projet est associé à un bouton "Learn more" 
+      qui ouvre une modale détaillant les objectifs, les fonctionnalités et les 
+      technologies mises en œuvre. Cette approche permet aux visiteurs d'explorer 
+      en profondeur chaque projet et de mieux comprendre les compétences techniques 
+      d'Abdellah.</p>
+      <p>Enfin, la section "Contact Me" propose plusieurs moyens de communication, 
+      tels que les adresses e-mail et le numéro de téléphone, pour faciliter les 
+      échanges avec Abdellah. Un formulaire de contact est également inclus pour 
+      que les visiteurs puissent lui envoyer des messages directement depuis le 
+      site. Les liens vers ses profils de réseaux sociaux et son profil GitHub 
+      ajoutent une touche de convivialité et permettent aux visiteurs de se connecter
+      avec lui sur différentes plateformes.</p>
+      <p>En résumé, ce projet de site web personnel est un excellent moyen pour Abdellah
+      Boualam de se présenter en tant qu'étudiant en informatique passionné et
+      talentueux. Il met en avant ses compétences techniques, son expérience et 
+      son objectif professionnel, tout en offrant une expérience utilisateur 
+      agréable et engageante pour les visiteurs qui souhaitent en savoir plus 
+      sur son parcours et ses projets.</p>
+      <a href="https://github.com/Mr-Boualam/My-portfolio/tree/main/My-Site-Web">
+        <button class="button" >voir le code</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Le modal-3 -->
+  <div id="monModal3" class="overlay modal">
+    <div class="modal-contenu">
+      <!-- Contenu du modal -->
+      <span class="fermer3">&times;</span>
+      <h2>Site web dynamique sur JAPON</h2>
+      <p>
+        Le mini-projet Techniques Web & MultiMedia consiste à créer un site 
+        web dynamique pour un pays de votre choix en utilisant HTML5, CSS,
+        javascript, multimédia et programmation web en php. Le site web aura
+        une partie statique qui représente un site vitrine du pays choisi et
+        une partie dynamique qui implémentera une application d'accès à une
+        base de données. 
+      </p> 
+      <p> 
+        Les fonctionnalités optionnelles incluent l'envoi 
+        de la newsletter par email en format html aux internautes 
+        inscrits, la gestion d'une photo pour chaque news et la recherche 
+        d'une news par mot clé. Les étapes pour créer le site web
+        comprennent la création d'une bannière assortie avec le pays,
+        un menu horizontal et une page d'accueil.
+      </p>
+      <a href="https://github.com/Mr-Boualam/un-site-web-dynamique-et-interactif-sur-japon">
+        <button class="button" >voir le code</button>
+      </a>
+      <!--<a href="#">
+        <button class="button" href="#">voir le vidéo</button>
+      </a>-->
+    </div>
+  </div>
+
+  <!-- =============== CONTACT ================= -->
+
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <div class="deux-contact">
+        <div class="contact-left">
+          <h1 class="titre">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>abdellah.boualam@usmba.ac.ma</p>
+          <p><i class="fa-solid fa-envelope"></i>mr.ab.boualam@gmail.com</p>
+          <p><i class="fa-solid fa-envelope"></i>boualam0305@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>(+212) 6 76 49 12 85</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/abde.allah.142/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/b_o_u_a_l_a_m/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abdellah-boualam-098a80279/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Mr-Boualam"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="button btn2">submit</button>
+            <p id="message-sent" class="hidden">Message Sent! </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>copyright <span>©</span> Boualam</p>
+      <p> Mise Jour en <span>20</span> Juin <span>2023</span></p>
+    </div>
+  </section>
+
+  <!-- =============== SCROLL UP ================= -->
+
+  <div class="scroll-up-btn">
+    <span>&#8593;</span>
+  </div>
+  
+  <!-- =============== SCRIPT ================= -->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script-mode.js"></script>
+  <script src="script-media.js"></script>
+  <script src="script-modale.js"></script>
+  <script src="script-scroll.js"></script>
+  <script src="script-contact.js"></script>
+
+</body>
+</html>
